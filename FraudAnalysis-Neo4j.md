@@ -7,10 +7,6 @@ This technical notebook presents a complete graph-based approach for analyzing f
 ## 📦 Part 1: Initial Graph Data Model
 
 The following Cypher queries define the structure of the graph database, creating nodes for accounts and transactions, and relationships such as `TRANSFERRED` and `SENT`.
-
-```cypher
-COMP8210
-Assignment 2 
 Part 1: Initial Graph Data Model
 CREATE CONSTRAINT FOR (s:Store) REQUIRE s.sid IS UNIQUE;
 CREATE CONSTRAINT FOR (c:Client) REQUIRE c.cid IS UNIQUE;
@@ -118,8 +114,8 @@ MERGE (t)-[:TO]->(receiver);
 This section includes Cypher queries designed to explore and extract patterns from the graph—such as high-value transactions, clusters of activity, and direct/indirect connections between accounts.
 
 ```cypher
-COMP8210
-Assignment 2 
+
+ 
 Part 2: Initial Queries
 
 Problem 1)
@@ -223,8 +219,8 @@ Advanced analytics using Neo4j GDS for:
 - Node similarity and anomaly identification
 
 ```cypher
-COMP8210
-Assignment 2 
+
+ 
 Part 3: Graph Data Science
 
 Part A:
