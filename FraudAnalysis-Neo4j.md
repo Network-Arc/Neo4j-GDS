@@ -7,7 +7,9 @@ This technical notebook presents a complete graph-based approach for analyzing f
 ## 📦 Part 1: Initial Graph Data Model
 
 The following Cypher queries define the structure of the graph database, creating nodes for accounts and transactions, and relationships such as `TRANSFERRED` and `SENT`.
+
 Part 1: Initial Graph Data Model
+```cypher
 CREATE CONSTRAINT FOR (s:Store) REQUIRE s.sid IS UNIQUE;
 CREATE CONSTRAINT FOR (c:Client) REQUIRE c.cid IS UNIQUE;
 CREATE CONSTRAINT FOR (t:TFN) REQUIRE t.TFN IS UNIQUE;
